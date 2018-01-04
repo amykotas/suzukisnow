@@ -2033,7 +2033,7 @@ p.entry-meta {
 
 .direct-users-icon {
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
 }
 
 .direct-users-title {
@@ -2045,7 +2045,10 @@ p.entry-meta {
 }
 
 .meet-andrew {
-	max-width: 100% !important;
-    height: auto;
-    width: auto;
+	background-color: #D0E3FD;
+	margin-bottom: 50px;
+	padding: 20px 40px;
+    position: relative;
+	overflow: hidden;
+	clear: both;
 }
