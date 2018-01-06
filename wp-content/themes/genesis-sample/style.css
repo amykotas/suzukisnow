@@ -235,28 +235,51 @@ mark {
 }
 
 blockquote {
-	font-family: 'Pompiere', 
-	margin: 40px;
+	font-family: 'Pompiere';
+	background: #f9f9f9;
+	border-left: 4px solid #ff4800;
+	margin: 1em 10px;
+	padding: 1em 30px;	
 }
 
 blockquote::before {
 	content: "\201C";
 	display: block;
-	font-size: 30px;
-	font-size: 3rem;
+	font-size: 50px;
+	font-size: 5rem;
 	height: 0;
 	left: -20px;
 	position: relative;
 	top: -10px;
 }
 
+blockquote p {
+	display: inline;
+	margin: ;
+	padding: ;
+}
+
 /* ## Design Elements
 --------------------------------------------- */
 
-.border-dotted {
-	border: 10p solid;
-	border-image: url(http://suzuki-snow.local/wp-content/uploads/2017/12/Divider.png) 20% round;
+/* Ripped from maisonette.com
+
+.lx_home_container:before {
+    left: 0;
+    background-image: url(../images/maisonette-bg-1-left.jpg);
+    background-repeat: repeat-y;
+    background-position: 0;
 }
+
+.lx_home_container:after {
+    right: 0;
+    background-image: url(../images/maisonette-bg-1-right.jpg);
+    background-repeat: repeat-y;
+    background-position: 100%;
+}
+
+
+*/
 
 /* ## Headings
 --------------------------------------------- */
@@ -1467,8 +1490,9 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #D0E3FD;
-	color: #1272f3;
+	background-color: #1272f3;
+	background-image: url("http://suzuki-snow.test/wp-content/uploads/2018/01/fabric-of-squares.png");
+	color: #fff;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1;
@@ -1477,11 +1501,12 @@ p.entry-meta {
 }
 
 .site-footer a {
-	color: #ffd006;
+	color: #fff;
+	text-decoration: none;
 }
 
 .site-footer a:hover {
-	text-decoration: none;
+	border-bottom: 1px solid white;
 }
 
 .site-footer p {
@@ -2042,6 +2067,15 @@ p.entry-meta {
 	width: 100%;
 }
 
+#direct-users a {
+	text-decoration: none;
+	color: #ED5D2E;
+}
+
+#direct-users a:hover {
+	color: #BC3B10;
+}
+
 #direct-users ul {
 	list-style-type: none;
 	margin: 0;
@@ -2063,26 +2097,23 @@ p.entry-meta {
 	color: #ED5D2E;
 }
 
-.direct-users-icon:hover {
-	color: #BC3B10;
-}
-
 .direct-users-title {
 	padding-bottom: 20px;
 }
 
-.direct-users-title a {
-	text-decoration: none;
-	color: #ED5D2E;
-
+.direct-users-title h3 {
+	margin-top: 5px;
+	text-align: center;
+	line-height: 1.25;
 }
 
-.direct-users-title h3 {
-	text-align: center;
+.direct-users-title a {
+	color: #BC3B10;
 }
 
 #meet-andrew {
 	background-color: #D0E3FD;
+	background-image: url("http://suzuki-snow.test/wp-content/uploads/2018/01/fabric-of-squares.png");
 	margin-bottom: 50px;
 	padding: 20px 40px 30px;
     position: relative;
@@ -2102,3 +2133,26 @@ p.entry-meta {
 #meet-andrew img {
 	border-radius: 100px;
 }
+
+/*
+blockquote {
+	background: #f9f9f9;
+	border-left: 4px solid #ff4800;
+	margin: 1em 10px;
+	padding: 1em 30px;	
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	font-style: normal;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+blockquote p {
+	display: inline;
+}*/
