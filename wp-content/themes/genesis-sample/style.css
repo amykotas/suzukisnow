@@ -573,6 +573,8 @@ th:first-child {
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 
+
+
 /* ## Site Containers
 --------------------------------------------- */
 
@@ -1130,6 +1132,8 @@ img.alignright,
 	font-family: 'Pompiere';
 	font-size: 24px;
 	font-size: 2.4rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
 	line-height: 1;
 	width: 100%;
 }
@@ -1142,7 +1146,7 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-	color: #2d3339;
+	color: #333;
 	display: block;
 	padding: 32px 20px;
 	text-decoration: none;
@@ -2031,24 +2035,70 @@ p.entry-meta {
 	margin-top: 0;
 }
 
+#direct-users {
+	display: inline-block;
+	margin-bottom: 50px;
+	padding: 20px 0;
+	width: 100%;
+}
+
+#direct-users ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+#direct-users li {
+	display: inline-block;
+	width: 30%;
+	padding-right: 5%;
+}
+
+#direct-users li:last-of-type {
+	padding-right: none;
+}
+
 .direct-users-icon {
 	text-align: center;
 	font-size: 3em;
+	color: #ED5D2E;
+}
+
+.direct-users-icon:hover {
+	color: #BC3B10;
 }
 
 .direct-users-title {
 	padding-bottom: 20px;
 }
 
+.direct-users-title a {
+	text-decoration: none;
+	color: #ED5D2E;
+
+}
+
 .direct-users-title h3 {
 	text-align: center;
 }
 
-.meet-andrew {
+#meet-andrew {
 	background-color: #D0E3FD;
 	margin-bottom: 50px;
-	padding: 20px 40px;
+	padding: 20px 40px 30px;
     position: relative;
 	overflow: hidden;
 	clear: both;
+}
+
+#meet-andrew h3 {
+	color: #1272f3;
+	font-family: 'Pompiere';
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#meet-andrew img {
+	border-radius: 100px;
 }
