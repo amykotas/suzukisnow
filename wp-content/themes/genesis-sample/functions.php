@@ -49,7 +49,7 @@ define( 'CHILD_THEME_VERSION', '2.3.0' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_enqueue_scripts_styles' );
 function genesis_sample_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700|Pompiere', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'genesis-sample-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
@@ -104,9 +104,6 @@ add_theme_support( 'custom-header', array(
 // Add support for custom background.
 add_theme_support( 'custom-background' );
 
-// Add support for shortcodes in widget areas.
-add_filter('widget_text', 'do_shortcode');
-
 // Add support for after entry widget.
 add_theme_support( 'genesis-after-entry-widget-area' );
 
@@ -151,17 +148,4 @@ function genesis_sample_comments_gravatar( $args ) {
 
 	return $args;
 
-}
-
-// Add Font Awesome Support
-add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
-function enqueue_font_awesome() {
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
-}
-
-//* Change the footer text
-add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
-function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright] <a href="http://suzukisnow.com" title="Suzuki Snow">Andrew Snow</a> | <a href="https://amykotas.github.io" title="Amy Kotas">Site by Amy Kotas</a>';
-	return $creds;
 }
