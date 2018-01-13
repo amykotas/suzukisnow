@@ -189,3 +189,14 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Welcome Message', 'modern-studio' ),
 	'description' => __( 'Widgets in this section will display above posts at the top of the home page.', 'modern-studio' ),
 ) );
+
+
+//* Customize the Site Footer
+
+remove_action( 'genesis_after', 'genesis_do_footer' );
+add_action( 'genesis_after', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>&copy; Copyright 2018 <a href="http://suzukisnow.com/">Andrew Snow</a> &middot; All Rights Reserved &middot; Site by <a href="https://amykotas.com/">Amy Kotas</a></p>
+	<?php
+}

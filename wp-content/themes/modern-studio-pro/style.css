@@ -1898,11 +1898,12 @@ p.form-submit,
 	
 	.nav-primary {
 		float: left;
+		text-align: right; /* Added to make left menu go up against centered logo */
 	}
 	
 	.nav-secondary {
 		float: right;
-		text-align: right;
+		text-align: left; /* Changed from right so menu items would be closer to logo */
 	}
 
 	.responsive-menu,
