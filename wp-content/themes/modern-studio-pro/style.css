@@ -2008,3 +2008,10 @@ p.form-submit,
 	}
 	
 }
+
+/* Homepage Customizations
+---------------------------------------------------------------------------------------------------- */
+
+.page-id-26  .entry-title {  /* Hides home title */
+	display: none;
+}
