@@ -1642,38 +1642,23 @@ p.form-submit,
 }
 
 .sidebar .widget {
-	background-color: #fff;
-	border: 1px solid #2d3339;
+	background: url(http://suzuki-snow.test/wp-content/uploads/2018/01/bkg.png);
 	margin-bottom: 60px;
 	padding: 40px 40px 15px;
 }
 
 .sidebar .widget-title {
-	background: #ed5d2e url(http://suzuki-snow.test/wp-content/uploads/2018/01/bkg-org.png) left top;
+	background: #1272f3;
 	color: #fff;
 	font-size: 12px;
 	margin-bottom: 30px;
-	margin-top: -58px;
+	margin-top: -55px;
 	padding: 10px;
 	text-align: center;
 }
 
 .sidebar .widget-title a {
 	border-width: 0;
-	color: #fff;
-}
-
-.sidebar .textwidget li {
-	margin: 20px;
-	margin-top: 20px;
-	background: #f47c58 url(http://suzuki-snow.test/wp-content/uploads/2018/01/bkg-org.png) left top;
-	padding: 10px;
-	color: #FFF !important;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.sidebar .text-widget li a {
 	color: #fff;
 }
 
