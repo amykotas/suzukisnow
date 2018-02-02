@@ -255,7 +255,7 @@ h6 {
 	color: #2d3339;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	line-height: 1;
 	margin: 0 0 20px;
 	text-transform: uppercase;
@@ -823,7 +823,7 @@ a[rel~="attachment"]:hover,
 .widget:last-child,
 .widget p:last-child,
 .widget ul > li:last-child {
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 
 .widget ol > li {
@@ -1359,9 +1359,9 @@ a[rel~="attachment"]:hover,
 --------------------------------------------- */
 
 .welcome-message {
-	border-bottom: 1px solid #2d3339;
-	padding-bottom: 40px;
+	background: url(http://suzuki-snow.test/wp-content/uploads/2018/02/bkg-gray.png);
 	margin-bottom: 80px;
+	padding: 30px 30px 5px;
 }
 
 .welcome-message .widget {
@@ -1369,7 +1369,19 @@ a[rel~="attachment"]:hover,
 }
 
 .welcome-message .widget-title {
-	text-align: left;
+	background-color: #ed5d2e;
+	color: #fff;
+	font-size: 13px;
+	margin-bottom: 30px;
+	margin-top: -45px;
+	padding: 10px;
+	text-align: center;
+}
+
+.welcome-message p {
+	font-family: 'Pompiere';
+	line-height: 1.75;
+	font-size: 1.75rem;
 }
 
 /* Entries
@@ -1650,7 +1662,7 @@ p.form-submit,
 .sidebar .widget-title {
 	background: #1272f3;
 	color: #fff;
-	font-size: 12px;
+	font-size: 13px;
 	margin-bottom: 30px;
 	margin-top: -55px;
 	padding: 10px;
