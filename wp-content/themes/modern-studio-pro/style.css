@@ -2029,7 +2029,7 @@ p.form-submit,
 .welcome-choice {
 	text-align: center;
 	border: 1px solid #eee;
-	box-shadow: 0 9px 20px rgba(0,0,0,.03);
+	box-shadow: 0 7px 15px rgba(18,114,243,0.3);
 	float: left;
 	min-height: 170px;
 	margin: 1%;
