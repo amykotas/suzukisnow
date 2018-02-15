@@ -28,6 +28,29 @@ function ms_scripts_styles() {
 
 }
 
+// Enqueue Font Awesome.
+add_action( 'wp_enqueue_scripts', 'custom_load_font_awesome' );
+function custom_load_font_awesome() {
+    wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', array(), null );
+}
+
+add_filter( 'script_loader_tag', 'add_defer_attribute', 10, 2 );
+/**
+ * Filter the HTML script tag of `font-awesome` script to add `defer` attribute.
+ *
+ * @param string $tag    The <script> tag for the enqueued script.
+ * @param string $handle The script's registered handle.
+ *
+ * @return   Filtered HTML script tag.
+ */
+function add_defer_attribute( $tag, $handle ) {
+    if ( 'font-awesome' === $handle ) {
+        $tag = str_replace( ' src', ' defer src', $tag );
+    }
+
+    return $tag;
+}
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
@@ -197,6 +220,6 @@ remove_action( 'genesis_after', 'genesis_do_footer' );
 add_action( 'genesis_after', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a href="http://suzukisnow.com/">Andrew Snow</a> &middot; All Rights Reserved &middot; Site by <a href="https://amykotas.com/">Amy Kotas</a></p>
+	<p>&copy; Copyright 2018 <a href="http://suzukisnow.com/">Andrew Snow</a> &middot; All Rights Reserved &middot; Site by <a href="https://amykotas.com/">Amy Kotas</a> &middot; Icons by <a href="https://icons8.com">Icons8</a></p>
 	<?php
 }
