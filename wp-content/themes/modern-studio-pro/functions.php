@@ -220,6 +220,7 @@ remove_action( 'genesis_after', 'genesis_do_footer' );
 add_action( 'genesis_after', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a href="http://suzukisnow.com/">Andrew Snow</a> &middot; All Rights Reserved &middot; Site by <a href="https://amykotas.com/">Amy Kotas</a> &middot; Icons by <a href="https://icons8.com">Icons8</a></p>
+	<p>&copy; Copyright 2018 <a href="http://suzukisnow.com/">Andrew Snow</a> &middot; All Rights Reserved</p>
+	<p>Site by <a href="https://amykotas.com/">Amy Kotas</a> &middot; Icons by <a href="https://icons8.com">Icons8</a></p>
 	<?php
 }
