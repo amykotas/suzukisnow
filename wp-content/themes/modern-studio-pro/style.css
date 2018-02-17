@@ -2030,37 +2030,45 @@ p.form-submit,
 	letter-spacing: 1px;
 }
 
-.welcome-icon {
-	background-image: url("http://suzuki-snow.test/wp-content/uploads/2018/02/bkg-paint.png");
+.circle-icon {
+	background: #fff;
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
 	margin-bottom: 25px;
 	text-align: center;
-	position: relative;
 }
 
-.icon1 {
-	background-color: #ffd006;
+.circle-icon img {
+	width: 96px;
+	height: 96px;
+	margin-top: 15px;
 }
 
-.icon2 {
-	background-color: #1273f3;
+.yellow {
+	border: 5px solid #ffd006;
 }
 
-.icon3 {
-	background-color: #ed5d2e;
+.blue {
+	border: 5px solid #1272f3;
+}
+
+.orange {
+	border: 5px solid #ed5d2e;
+}
+
+img#metronome {
+	margin-left: 15px;
+}
+
+img#email {
+	width: 86px;
+    height: 86px;
+    margin-top: 23px;
 }
 
 .welcome-choice {
 	padding: 30px 20px;
-}
-
-.welcome-choice .dashicons {
-	width: 50px;
-    height: 50px;
-	font-size: 50px;
-	position: absolute;
 }
 
 .welcome-choice p {
