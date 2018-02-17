@@ -2037,6 +2037,11 @@ p.form-submit,
 	border-radius: 50%;
 	margin-bottom: 25px;
 	text-align: center;
+	transition: background 0.5s ease;
+}
+
+.circle-icon:hover {
+	background-color: #EDF4FE;
 }
 
 .circle-icon img {
@@ -2068,7 +2073,7 @@ img#email {
 }
 
 .welcome-choice {
-	padding: 30px 20px;
+	padding: 0 20px;
 }
 
 .welcome-choice p {
@@ -2077,4 +2082,12 @@ img#email {
 	font-weight: 600;
 	line-height: 1.25;
 	text-align: center;
+}
+
+.welcome-choice a {
+	border-bottom: none;
+}
+
+.welcome-choice a:hover {
+	border-bottom: none;
 }
